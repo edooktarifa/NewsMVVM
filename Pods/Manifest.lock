@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.9.1)
+  - FLEX (4.4.1)
+  - Kingfisher (4.10.1)
+  - netfox (1.19.0)
+  - PKHUD (5.3.0)
+  - SkeletonView (1.20.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - FLEX
+  - Kingfisher
+  - netfox
+  - PKHUD (~> 5.0)
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLEX
+    - Kingfisher
+    - netfox
+    - PKHUD
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SkeletonView: 8c3ba4fbbb6dc8c11b230f2293d4bad162843f04
+
+PODFILE CHECKSUM: a69e05e0da35354f6960da0931262949410acb37
+
+COCOAPODS: 1.10.1
