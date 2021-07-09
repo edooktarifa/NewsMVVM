@@ -4,7 +4,6 @@ target 'NewsMVVM' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.0'
-  pod 'PKHUD', '~> 5.0'
   pod 'netfox'
   pod 'FLEX'
   pod 'SkeletonView'

@@ -19,12 +19,12 @@ struct CustomAlertAction {
 }
 
 struct DefaultAlert {
-    var title: String
-    var message: String
-    var actionn: DefaultAlertAction
+    let title: String
+    let message: String
+    let actionButton: DefaultAlertAction
 }
 
 struct DefaultAlertAction {
-    var title: String
-    var action: (() -> Void)?
+    let title: String
+    let handler: (() -> Void)?
 }

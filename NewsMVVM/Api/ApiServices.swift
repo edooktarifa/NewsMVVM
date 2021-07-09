@@ -25,6 +25,7 @@ class APIServices {
                 }
                 
             case .failure(let error):
+                completion(nil, nil, error)
                 guard let data = response.data else { return }
                 guard let statusCode = response.response?.statusCode else { return }
                 
