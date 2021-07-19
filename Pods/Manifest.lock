@@ -1,13 +1,40 @@
 PODS:
   - Alamofire (4.9.1)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - FBSDKCoreKit (11.0.1):
+    - FBSDKCoreKit/Core (= 11.0.1)
+  - FBSDKCoreKit/Core (11.0.1):
+    - FBSDKCoreKit_Basics (~> 11.0.1)
+  - FBSDKCoreKit_Basics (11.0.1):
+    - FBSDKCoreKit_Basics/Basics (= 11.0.1)
+  - FBSDKCoreKit_Basics/Basics (11.0.1)
+  - FBSDKLoginKit (11.0.1):
+    - FBSDKLoginKit/Login (= 11.0.1)
+  - FBSDKLoginKit/Login (11.0.1):
+    - FBSDKCoreKit (~> 11.0.1)
+    - FBSDKCoreKit_Basics (~> 11.0.1)
   - FLEX (4.4.1)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.2.2):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - GTMSessionFetcher/Core (1.6.1)
   - Kingfisher (4.10.1)
   - netfox (1.19.0)
   - SkeletonView (1.20.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - FBSDKLoginKit
   - FLEX
+  - GoogleSignIn
   - Kingfisher
   - netfox
   - SkeletonView
@@ -15,18 +42,32 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppAuth
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
     - FLEX
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
     - Kingfisher
     - netfox
     - SkeletonView
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  FBSDKCoreKit: 38c9e29a3f1436362acacff6486d3a28628c288f
+  FBSDKCoreKit_Basics: 06780a4a12e16596bde8406add02c6aa1bf38616
+  FBSDKLoginKit: 8243e04c590c38b85c69fcf09d1234514d2475c3
   FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
+  GTMSessionFetcher: 36689134877faeb055b27dfa4ccc9ceaa42e029e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   netfox: efeec1d23406df6cd605212f09a40957bb5654eb
   SkeletonView: 8c3ba4fbbb6dc8c11b230f2293d4bad162843f04
 
-PODFILE CHECKSUM: 2f9c7d4e1b685de721f1a36549e98abc92b28284
+PODFILE CHECKSUM: 6a09ff5e667745e819d4fd476f9790133eb93aaf
 
 COCOAPODS: 1.10.1

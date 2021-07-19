@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mrl-RT-Bbr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rIS-7I-rkk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -45,6 +46,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="80.357142857142847"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="PQu-7L-leT">
+            <objects>
+                <viewController id="rIS-7I-rkk" customClass="LoginViewController" customModule="NewsMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGH-R8-U3X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ9-SJ-BTd" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="132" y="433" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="G7J-Ok-aFI"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjO-TM-ds9">
+                                <rect key="frame" x="132" y="478" width="150" height="30"/>
+                                <state key="normal" title="Login with google"/>
+                                <connections>
+                                    <action selector="loginWithGoogle:" destination="rIS-7I-rkk" eventType="touchUpInside" id="Sbt-sR-WeV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kWO-xr-x0x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XZ9-SJ-BTd" firstAttribute="centerX" secondItem="xGH-R8-U3X" secondAttribute="centerX" id="CXu-eu-78N"/>
+                            <constraint firstItem="XZ9-SJ-BTd" firstAttribute="centerY" secondItem="xGH-R8-U3X" secondAttribute="centerY" id="PJc-LX-1Nq"/>
+                            <constraint firstItem="kjO-TM-ds9" firstAttribute="trailing" secondItem="XZ9-SJ-BTd" secondAttribute="trailing" id="W2g-44-7Qp"/>
+                            <constraint firstItem="kjO-TM-ds9" firstAttribute="leading" secondItem="XZ9-SJ-BTd" secondAttribute="leading" id="XIT-uu-Zqu"/>
+                            <constraint firstItem="kjO-TM-ds9" firstAttribute="top" secondItem="XZ9-SJ-BTd" secondAttribute="bottom" constant="15" id="fbn-Xa-kFT"/>
+                            <constraint firstItem="kjO-TM-ds9" firstAttribute="centerX" secondItem="XZ9-SJ-BTd" secondAttribute="centerX" id="qSh-hJ-j9H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="XZ9-SJ-BTd" id="tmZ-kP-7yP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faB-Mk-6cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-976" y="92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="emR-h1-oG8">

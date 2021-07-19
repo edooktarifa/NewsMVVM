@@ -8,6 +8,8 @@ target 'NewsMVVM' do
   pod 'FLEX'
   pod 'SkeletonView'
   pod 'Kingfisher'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
   target 'NewsMVVMTests' do
     inherit! :search_paths

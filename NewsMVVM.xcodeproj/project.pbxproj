@@ -18,6 +18,7 @@
 		3658C0832696EA2A003F356A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658C0812696EA2A003F356A /* NewsCell.swift */; };
 		3658C0842696EA2A003F356A /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3658C0822696EA2A003F356A /* NewsCell.xib */; };
 		3658C0A22697FA17003F356A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658C0A12697FA17003F356A /* BaseViewController.swift */; };
+		3658C0F026987133003F356A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3658C0EF26987133003F356A /* LoginViewController.swift */; };
 		36A4969D2696A95800039BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A4969C2696A95800039BE1 /* AppDelegate.swift */; };
 		36A4969F2696A95800039BE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A4969E2696A95800039BE1 /* SceneDelegate.swift */; };
 		36A496A12696A95800039BE1 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A496A02696A95800039BE1 /* NewsViewController.swift */; };
@@ -62,6 +63,7 @@
 		3658C0812696EA2A003F356A /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		3658C0822696EA2A003F356A /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		3658C0A12697FA17003F356A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3658C0EF26987133003F356A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		36A496992696A95800039BE1 /* NewsMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A4969C2696A95800039BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36A4969E2696A95800039BE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				36A496A52696A95A00039BE1 /* Assets.xcassets */,
 				36A496A72696A95A00039BE1 /* LaunchScreen.storyboard */,
 				36A496AA2696A95A00039BE1 /* Info.plist */,
+				3658C0EF26987133003F356A /* LoginViewController.swift */,
 			);
 			path = NewsMVVM;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				36A496962696A95800039BE1 /* Frameworks */,
 				36A496972696A95800039BE1 /* Resources */,
 				5DB888F8263DACA2A0C11790 /* [CP] Embed Pods Frameworks */,
+				6627790E2B0ECC3AB44A6199 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,6 +308,7 @@
 				36A496B72696A95B00039BE1 /* Frameworks */,
 				36A496B82696A95B00039BE1 /* Resources */,
 				C493269A7FA8878E9E7FE197 /* [CP] Embed Pods Frameworks */,
+				378E2E521A54FE6F972675B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +413,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		378E2E521A54FE6F972675B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM-NewsMVVMUITests/Pods-NewsMVVM-NewsMVVMUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM-NewsMVVMUITests/Pods-NewsMVVM-NewsMVVMUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM-NewsMVVMUITests/Pods-NewsMVVM-NewsMVVMUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3DA903B7BAE2FBCE7519AD30 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +467,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM/Pods-NewsMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6627790E2B0ECC3AB44A6199 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM/Pods-NewsMVVM-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM/Pods-NewsMVVM-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsMVVM/Pods-NewsMVVM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBA1DAEC95BC01FF9796D2E7 /* [CP] Check Pods Manifest.lock */ = {
@@ -504,6 +543,7 @@
 				36A4969F2696A95800039BE1 /* SceneDelegate.swift in Sources */,
 				3658C0462696AF29003F356A /* Constant.swift in Sources */,
 				3658C03C2696ADBE003F356A /* NewsVM.swift in Sources */,
+				3658C0F026987133003F356A /* LoginViewController.swift in Sources */,
 				3658C0832696EA2A003F356A /* NewsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NR8XVRMXTV;
 				INFOPLIST_FILE = NewsMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -704,6 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NR8XVRMXTV;
 				INFOPLIST_FILE = NewsMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
